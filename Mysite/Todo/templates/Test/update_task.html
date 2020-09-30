@@ -1,0 +1,7 @@
+{% load crispy_forms_tags %}       
+<h2>Update Task</h2>
+<form method='POST' action=''> {% csrf_token %}
+  {{form.media}}
+  {{form|crispy}}
+    <input type="submit" name='Update Task'>
+</form>
